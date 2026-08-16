@@ -22,3 +22,40 @@ We evaluated 6 different Machine Learning and Deep Learning models for Spam Clas
 * **Best ML Model:** **SVM (Linear)** achieved the best performance among classical ML models with an Accuracy of **97.76%** and F1-Score of **0.9600**.
 * **Best DL Model:** **BERT** achieved the highest performance overall with an Accuracy of **98.26%** and F1-Score of **0.9693**.
 * **Final Deployment Model:** **BERT Model** was selected for the Web Application integration due to its superior contextual understanding, highest accuracy, and balanced Precision-Recall trade-off.
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+---
+
+## 🚀 How to Run and Test the Web Application
+
+Follow these steps to launch and test the Gradio Web Application using Google Colab:
+
+### Prerequisites:
+* Ensure that the trained BERT model folder (`bert_model`) is placed in your Google Drive at the path:
+  `/content/drive/MyDrive/spam_detection/models/bert_model`
+
+---
+
+### Step-by-Step Instructions:
+
+1. **Open the Notebook:**
+   * Open the `notebooks/Spam_Detection_Web_Appipynb.ipynb` file from this repository in **Google Colab**.
+
+2. **Run the Notebook:**
+   * Click **Runtime** > **Run all** (or press `Ctrl + F9`).
+   * When prompted, click **"Connect to Google Drive"** to allow the notebook to access the saved BERT model.
+
+3. **Launch the Web Interface:**
+   * Once all cells execute, navigate to the last cell output.
+   * You can access the Web Interface in **two ways**:
+     * **Inline Interface:** Test directly within the Colab notebook.
+     * **Public URL:** Click the generated `https://xxxx.gradio.live` share link to open the full Web Application in a new tab.
+
+4. **Testing the Application:**
+   * Select a platform (**Email**, **SMS**, or **YouTube**).
+   * Enter or paste any sample message into the input box.
+   * Click **🔍 Analyze Message** to view classification results (Spam / Ham), confidence scores, highlighted spam indicators, and safety guidelines.
