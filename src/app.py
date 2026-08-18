@@ -34,4 +34,5 @@ with gr.Blocks(title="AI Spam Detector") as demo:
     btn.click(fn=analyze_message, inputs=[text, platform], outputs=[out1, out2])
 
 if __name__ == "__main__":
-    demo.launch()
+    port = int(os.environ.get("PORT", 7860))
+    demo.launch(server_name="0.0.0.0", server_port=port)
